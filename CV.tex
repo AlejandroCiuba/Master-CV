@@ -1,0 +1,183 @@
+\documentclass[11pt]{tianyicv}
+
+\usepackage[sfdefault, mono=false]{libertinus}
+\usepackage[sansmath]{libertinust1math}
+
+% \hypersetup{nolinks=true}           % Disable hyperlinks
+% \geometry{showframe}                % Show page frames for debugging purposes
+\geometry{margin=0.75in}
+
+\NewDocumentCommand{\dates}{mm}{#1 -- #2}
+
+\bibliography{citations/pubs}
+
+\title{Curriculum Vitae}
+\author{Alejandro Ciuba}
+\email{alejandrociuba@pitt.edu}
+\phone{(412) 874-1838}
+\homepage{alejandrociuba.github.io}
+\address{%
+    Department of Computer Science\\
+    University of Pittsburgh\\
+    135 N Bellefield Ave\\
+    Pittsburgh, PA 15213
+}
+\github{github.com/AlejandroCiuba}
+% \linkedin{https://www.linkedin.com/in/alejandro-ciuba/}
+% \date{Current Date}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Education}
+
+\phd{University of Pittsburgh}
+{Ph.D. in Computer Science}
+{Pittsburgh, PA}{\dates{August 2023}{Present}}
+{Community-focused natural-language processing}{
+    \begin{itemize}
+        \item \textbf{Advisors:} Aakash Gautam and Lorraine (Xiang) Li 
+    \end{itemize}
+}
+
+\education{University of Pittsburgh}
+{B.S. in Computer Science}
+{Pittsburgh, PA}{\dates{August 2019}{May 2023}}
+{Minors in Linguistics and Spanish}{}[3.97]
+
+
+\section{Research Experience}
+
+\experience{Human-Computer Interaction Research: Low-Resource Language Preservation}
+{Graduate Student Researcher under Dr. Aakash Gautam}
+{Pittsburgh, PA}{\dates{January 2024}{Present}}{
+    \begin{itemize}
+        \item Working on a literature review of NLP community engagement practices using the PRISMA framework
+        \item Conducting interviews and thematic analysis to better understand how technology can benefit communities
+    \end{itemize}
+}
+
+\experience{Natural Language Processing Research: Automatic Essay Evaluation}
+{Graduate Student Researcher under Dr. Lorraine (Xiang) Li}
+{Pittsburgh, PA}{\dates{May 2024}{Present}} {
+    \begin{itemize}
+        \item Performing baseline training/fine-tuning on a custom BERT-based model via PyTorch and HuggingFace 
+        \item Conducting exploratory data analysis on essay corpora via feature correlation and hypothesis testing
+    \end{itemize}
+}
+
+\experience{ASR Transcription Research \& Technical Support}
+{Research Assistant under Dr. Dan Villarreal}
+{Pittsburgh, PA}{\dates{August 2022}{August 2024}}{
+    \begin{itemize}
+        \item Developed custom ASR pipeline with PyTorch Lightning and \texttt{pyannote} to automatically segment audio
+        \item Developed a Python API to work with ELAN files with \texttt{pytest} integration
+    \end{itemize}
+}
+
+\experience{Classroom Discussion Analysis Research}
+{Research Assistant under Dr. Diane Litman}
+{Pittsburgh, PA}{\dates{January 2023}{April 2023}}{
+    \begin{itemize}
+        \item Managed dataset cleaning pipeline for Word Documents, focusing on anonymization and XML tag extraction
+        \item Examined teacher-student classroom discussion differences through data analysis and hypothesis testing 
+    \end{itemize}
+}
+
+\experience{Frederick Jelinek Memorial Summer Workshop}
+{Undergraduate Researcher under Drs. Anthony Larcher and Santosh Kesiraju}
+{Baltimore, MD}{\dates{June 2022}{August 2022}}{
+    \begin{itemize}
+        \item Created a trilingual corpus (English, French and Tamasheq/Tamahaq) for low-resource machine translation
+        \item Ran low-resource model training simulations (e.g. for T5-Small and mBART)
+    \end{itemize}
+}
+
+\experience{Linguistics Research}
+{Undergraduate Research Assistant under Drs. Alan Juffs and Na-Rae Han}
+{Pittsburgh, PA}{\dates{January 2022}{April 2022}}{
+    \begin{itemize}
+        \item Parsed video game scripts for pragmatics analysis using \texttt{spaCy}, \texttt{nltk} and \texttt{beautifulsoup}
+        \item Aided in the cleaning of the unpublished PELIC Speech Dataset
+    \end{itemize}
+}
+
+\section{Work Experience}
+
+\experience{Teaching Assistant Positions}
+{Computational Linguistics and Data Structures \& Algorithms}
+{Pittsburgh, PA}{\dates{August 2021}{April 2022}}{
+    \begin{itemize}
+        \item Ran recitations/office hours for students, covering fundamental subject concepts
+        \item Ran a class lecture on machine translation with Jupyter Notebook demo
+    \end{itemize}
+}
+
+\experience{Carnegie Library ESL Class}
+{Volunteer ESL Instructor for the Carnegie Public Library}
+{Pittsburgh, PA}{\dates{August 2019}{March 2020}}{
+    \begin{itemize}
+        \item Guided adult learners through vocabulary and grammar exercises
+        \item Maintained a safe environment for English learners
+    \end{itemize}
+}
+
+\section{Publications}
+% Entry command is basically the same as the Experience command, but I kept them separate so that I may choose to style them differently
+
+% \publication{INTERSPEECH}
+% {Strategies for improving low resource speech to text translation relying on pre-trained ASR models}{May 2023}
+% \cite{kesirajuStrategiesImprovingLow2023}
+
+% \publication{HAL}
+% {Multi-lingual Speech to Speech Translation for Under-Resourced Languages}{August 2022}
+
+\begin{publications}[INTERSPEECH]
+    \publication{\cite{kesirajuStrategiesImprovingLow2023}}
+\end{publications}
+
+\begin{publications}[Horizons 2020 Project]
+    \publication{\cite{larcherMultilingualSpeechSpeech2022_mod}}
+\end{publications}
+
+\section{Awards}
+
+\award{Southern Regional Educational Board Member}{\dates{August 2024}{Present}}
+
+\award{K. Leroy Irvis Fellow}{\dates{August 2023}{Present}}
+
+\award{CSC Hacks Winner + Best Beginner Project}{November 2020}[\normalfont Submission: \textit{Flatland: The Game}]
+
+\award{Provost Academy Member}{\dates{August 2019}{May 2023}}
+
+\section{Skills}
+% Entry command is basically the same as the Experience command, but I kept them separate so that I may choose to style them differently
+
+\skill{Programming \& Computation}[
+    \begin{itemize}
+        \item C, Python, R, Go, Java
+        \item Git, GitHub and GitLab
+        \item Compute cluster usage via Slurm
+        \item Linux, Docker and \texttt{bash} script creation
+    \end{itemize}
+]
+
+\skill{User Research Skills}[
+    \begin{itemize}
+        \item Quantitative analysis via inferential statistics
+        \item Qualitative analysis via coding and thematic analysis
+        \item User interview and survey creation
+    \end{itemize}
+]
+
+\skill{Foreign Languages \& Linguistics}[
+    \begin{itemize}
+        \item Conversational Spanish
+        \item Basic Portuguese Comprehension
+        \item Manual document translation experience
+    \end{itemize}
+]
+
+\end{document}
